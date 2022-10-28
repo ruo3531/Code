@@ -1,0 +1,60 @@
+body{
+    background-color: azure;
+    font-family: 'Caveat';   
+}
+.Text{
+    font-size: 25px;
+    padding: 5px;
+}
+.chText{
+    /* font-size: 25px; */
+    display: block;
+    margin: 20px,5px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+}
+.List{
+    background-color: rgba(255, 255, 255, 0.66);
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    padding :5px, 0px, 0px,10px;
+}
+#Output{
+    background-color: rgba(255, 255, 255, 0.704);
+    width: 500px;
+    height: 200px;
+    border:5px #b0b0b0cd solid;
+    padding: auto;
+    text-align: center;
+    font-size: 80px;
+    position: absolute;
+    top:60%;
+    left: 35%;
+}
+#cat{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position:absolute;
+    left: 55%;
+
+    animation-name: MoveCat;   
+    animation-duration: 2s;    
+    animation-delay: 0s; 
+    animation-iteration-count: infinite; 
+
+}
+@keyframes MoveCat{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}

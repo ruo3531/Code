@@ -1,0 +1,12 @@
+#text{
+    background-image:url(img/white.php);
+    background-size: contain;
+    font-size: 200%;
+    text-align: center;
+    margin: auto;
+}
+#Flag{
+    color: rgb(245, 245, 245);
+    margin: auto;
+    text-align: center;
+}

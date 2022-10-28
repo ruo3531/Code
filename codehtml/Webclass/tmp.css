@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(197, 220, 251);
+}
+h4{
+    color: rgb(255, 255, 255);
+    width: 80%;
+}
+h3{
+    text-align: center;
+}
+#Title{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    color: rgb(255, 255, 255);
+    width: 80%;
+    margin: auto;
+}
+.salecat{
+    width: 100px;
+    height: 100px;
+    border-radius: 180px;
+}
+.cat{
+    width: 200px;
+    height: 100px;
+    margin: auto 40%;
+}
+.list{
+    background-color: rgba(255, 253, 253, 0.233);
+    border-radius: 100px;
+    width: 500px;
+    height: 550px;
+    margin: auto;
+}
+.Text{
+    color: rgb(120, 120, 120);
+}
+.run{    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+    animation-name: MoveCat;   
+    animation-duration: 7s;    
+    animation-delay: 0s;  
+    animation-timing-function:linear;
+    animation-iteration-count: infinite; 
+}
+.run.two{
+    top: 15%;
+    left: 80%;
+    animation-name: MoveCat1;   
+    animation-duration: 8s;    
+    animation-delay: 0s;  
+    animation-direction: alternate;
+}
+.run.three{
+    animation-duration: 15s; 
+    animation-delay: 0s; 
+    animation-direction: alternate;
+}
+.run img{
+    width: 100px;
+    height: 80px;
+    border-radius: 80%;
+}
+
+
+
+@keyframes MoveCat{
+    0%{
+        top:20%;
+        left:10%;
+    }
+    25%{
+        top: 80%;
+        left: 70%;
+    }
+    50%{
+        top: 10%;
+        left:75%;
+    }
+    75%{
+        top:85%;
+        left:20%;
+    }
+    100%{
+        top:20%;
+        left:10%;
+    }
+
+}
+@keyframes MoveCat1{
+    0%{
+        top:20%;
+        left:80%;
+    }
+    25%{
+        top: 80%;
+        left: 50%;
+    }
+    50%{
+        top:40%;
+        left:10%;
+    }
+    75%{
+        top:10%;
+        left:50%;
+    }
+    100%{
+        top:20%;
+        left:80%;
+    }
+}

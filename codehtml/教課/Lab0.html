@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Hello XSS!</title>
+        <script>    
+            function change(){
+                var num = document.getElementById("Input").value;
+                var Png = document.getElementById("Pic");
+                Png.src = num + ".png";
+            }
+            function Load(){
+                var Out = document.getElementById("Output");
+                Out.innerHTML = "Success";
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type = 'text' id = "Input">
+        <span id = "Output"></span>
+        <div>
+            <img id = "Pic" src="1.png" onclick="change()" onerror="alert('Error')" onload = "Load()" >
+        </div>
+    </body>
+</html>
